@@ -40,11 +40,22 @@ To save you from having to count the items above, you can assume that length of 
 
 i.e. is31Flavors(originalFlavors) will return TRUE.*/
 
-function is31Flavors(/*code here*/){
+const control = ["Phantom of the Opera", "Avenue Q", "Hairspray", "Oklahoma!", "Rent"];
 
-    /*code here*/
+function is31Flavors(array){
+
+    if(array.length === 31){
+        return true;
+    } else if(array.length !== 31){
+        return false;
+    }
 
 }
+
+/*console.log("Original Flavors:");
+console.log(is31Flavors(originalFlavors));
+console.log("Control:");
+console.log(is31Flavors(control));*/
 
 /* Task 2: Corporate has come to you with an idea for a new flavor: Rainbow Sherbert! They think this will be a game changer. You need to modify the array to include this flavor. 
 
