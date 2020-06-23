@@ -75,10 +75,10 @@ function addFlavor(newElement, array){
 
 }
 
-console.log("Original Flavors:");
+/*console.log("Original Flavors:");
 addFlavor("Rainbow Sherbert", originalFlavors);
 console.log("Control:");
-addFlavor("Jersey Boys", control);
+addFlavor("Jersey Boys", control);*/
 
 /* Task 3: Houston, we have a problem! There are now 32 flavors in the array! Your task is to remove an item from the end of the array. 
 
@@ -90,11 +90,19 @@ Your function should remove a flavor from the end of the array and console.log t
 
 For example removeLastFlavor(originalFlavors) would return ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla"]*/ 
 
-function removeLastFlavor(/*code here*/){
+function removeLastFlavor(newElement, array){
 
-    /*code here*/
+    array.unshift(newElement);
+    array.pop();
+    console.log(array);
 
 }
+
+
+/*console.log("Original Flavors:");
+removeLastFlavor("Rainbow Sherberts",originalFlavors);
+console.log("Control:");
+removeLastFlavor("Jersey Boys", control);*/
 
 /* Task 4: Write a function that returns a flavor at a given index in the array.
 
